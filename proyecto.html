@@ -1,0 +1,140 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/datos.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+<body>
+    <section>
+    <form action="">
+        <input type="email" class="email border biorder-slate-800"/>
+    <br>
+    <input type="email" class="pass border biorder-slate-800"/>
+    <br>
+    <h6 class="text-red-600"></h6>
+    </form>
+    <button class="registrar">registrar</button>
+    <a href="#" class="alzar">seguir</a>
+
+    
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+
+    <script src="script/datos.js"></script>
+</body>
+</html>-->
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      .padre {
+      }
+      .color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="login-email border" />
+    <input type="text" class="login-pass border" />
+    <button>login</button>
+
+    <div class="padre">
+      <h1>Aqui ira texto</h1>
+    </div>
+    <script>
+      const input1 = document.querySelector(".login-email");
+      const input2 = document.querySelector(".login-pass");
+
+      document.querySelector("button").addEventListener("click", function () {
+        if (input1.value !== localStorage.email) {
+          alert("Ese correo no existe");
+        } else if (input1.value === localStorage.email) {
+          window.location.href = "repaso.html";
+        }
+      });
+
+      // let vec = ["https://rickandmortyapi.com/api/character/avatar/18.jpeg","https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_QL75_UX500_CR0,234,500,281_.jpg","si",3];
+
+      // for(let pedal=0;pedal<=5;pedal=pedal+1){
+      //   $(".padre").append("<img class='rounded-full w-25' src="+vec[pedal]+">")
+      // }
+    </script>
+  </body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form action="">
+      <input type="email" class="email border border-slate-800" />
+      <br />
+      <input type="text" class="pass border border-slate-800" />
+      <h6 class="text-red-600"></h6>
+    </form>
+    <button class="register">Registrarse</button>
+
+    <a href="#" class="ancla">sign up</a>
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+    <script>
+      const ancla = document.querySelector(".ancla");
+      const boton = document.querySelector(".register");
+      const input1 = document.querySelector(".email");
+      const input2 = document.querySelector(".pass");
+
+      const myPopup = new Popup({
+        id: "my-popup",
+        title: "My First Popup",
+        content: `
+        <input class="login p-[48px]" type="email">
+        <h1>Hola</h1>
+        <button class="login">Iniciar sesion</button>
+   
+        `,
+      });
+
+      boton.addEventListener("click", function () {
+        if (
+          input1.value == null ||
+          input1.value == "" ||
+          input2.value == null ||
+          input2.value == ""
+        ) {
+          // alert("Llene todos los campos");
+          document.querySelector("h6").innerHTML = "Debe llenar todos los campos.";
+        } else {  
+          localStorage.setItem("email", input1.value);
+          localStorage.setItem("password", input2.value);
+          alert("Se guardo el usuario")
+        }
+      });
+
+
+
+      ancla.addEventListener("click", function () {
+         myPopup.show();
+
+            window.location.href = "vect.html";
+      });
+    </script>
+  </body>
+</html>

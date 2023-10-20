@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.netflix-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.expanded-movie {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    text-align: center;
+}
+
+.expanded-movie img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
