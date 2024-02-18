@@ -6,118 +6,359 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/suprémacia.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <div class="contenedor overflow-hidden bg-black h-100 ">
-        <div class="imagen relative">
-            <img src="max/netflix1.png" class="absolute left-8 top-16">
-            <img src="max/avatar5.png" class="absolute w-7 rounded top-16 right-5 ">
-            <img src="max/tv.png" class="absolute top-16 right-16 ">
-            <h1 class="text-center text-white absolute inset-x-0 bottom-0">Aneh • Romantis • Komedi</h1>
-            <div class="ro"></div>
-            <img src="max/portada.png" class="">
-        </div>
-        <div class="entero flex justify-around pt-5">
-            <div class="text-center">
-                <a href="#"> <img src="max/vector.png" class="text-center w-8 inline-block var"> </a>
-                <div><a href="#" class="text-white text-center text-sm">Daftar Saya</a></div>
+    <div class="contenedorDeNetflix">
+        <div class="barraTarea">
+            <div class="barraRelleno flex">
+                <h2 class="netflix">NETFLIX</h2>
+                <p>Accion</p>
+                <p>Aventura</p>
+                <p>Terror</p>
+                <p>Drama</p>
             </div>
-            <button class="text-black bg-white w-24 relative rounded h-11"><img src="max/boton.png" class="w-[20px] absolute inline-block left-2"> Putar</button>
-            <div class="text-white">
-                <img src="max/nega.png" class="w-7">
-                <h1 class="text-white text-sm">Info</h1>
-            </div>
-        </div>
-        <h1 class="text-white pt-5 text-2xl pt-4 pb-1 las">Baru Ditambahkan</h1>
+            <div class="busqueda">
+                <div class="lupa">
+                    <img src="imgSublimacion/Search.svg" alt="">
+                </div>
 
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4" space-between="10" free-mode="true">
-            <swiper-slide><img src="max/serie5.png" class="ver1"></swiper-slide>
-            <swiper-slide><a href="https://filemoon.sx/e/fnn753frbzvh/El_gran_atraco_armado__2022_Dual.mkv"><img src="max/japones1.png"></a> </swiper-slide>
-            <swiper-slide> <img src="max/japones3.png"> </swiper-slide>
-            <swiper-slide> <img src="max/japones5.png"> </swiper-slide>
-            <swiper-slide> <img src="max/japones9.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie1.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie2.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie3.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie4.png"> </swiper-slide>
-        </swiper-container>
+                <div class="notificaciones">
+                    <img src="imgSublimacion/Group.svg" alt="">
+                </div>
+                <div class="regalo">
+                    <img src="imgSublimacion/Group 3.svg" alt="">
+                </div>
 
-        <div class="posterior flex justify-around pt-2 pb-11 fixed z-10 w-full bottom-[-5%] bg-black">
-            <div class="text-center ">
-                <a href="#"> <img src="max/mas.png" class="w-5 inline-block"> </a> 
-                <div class="text-white">Beranda</div>
-            </div>
-            <div class="text-center">
-                <a href="#"> <img src="max/Frame2.png" class="w-5 inline-block"> </a>
-                <div class="text-white">Baru & Populer</div>
-            </div>
-            <div class="text-center">
-                <a href="#"> <img src="max/des.svg" class="w-5 inline-block"> </a>
-                <div class="text-white">Cari</div>
-            </div>
-            <div class="text-center">
-                <a href="#"> <img src="max/des.svg" class="w-5 inline-block"> </a>
-                <div class="text-white">Download</div>
+                <button class="text-white burger">≡</button>
+
             </div>
         </div>
-        <h1 class="text-white text-2xl pt-4 pb-1 las">Sedang Tren Sekarang</h1>
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="10" free-mode="true">
-            <swiper-slide> <img src="max/seri6.png"> </swiper-slide>
-            <swiper-slide> <img src="max/seri7.png"> </swiper-slide>
-            <swiper-slide> <img src="max/seri8.png"> </swiper-slide>
-            <swiper-slide> <img src="max/seri9.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie10.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie11.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie12.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie13.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie14.png"> </swiper-slide>
-            <swiper-slide> <img src="max/serie15.png"> </swiper-slide>
-        </swiper-container>
+        <div class="Principal">
 
-        <h1 class="text-white text-2xl pt-4 pb-1 las">Hanya di Netflix</h1>
+            <div class="carruselPrincipal">
+                <div class="desbanesido"></div>
+                <ul>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (31).png" alt="">
+                    </li>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (2).png " alt="">
+                    </li>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (3).png" alt="">
+                    </li>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (24).png" alt="">
+                    </li>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (5).png" alt="">
+                    </li>
+                    <li>
+                        <img src="./imgSublimacion/MoviePoster (6).png" alt="">
+                    </li>
+                </ul>
+            </div>
 
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="10" free-mode="true">
-            <swiper-slide class="ver"> <img src="max/peli1.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli2.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli3.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli4.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli5.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli6.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli7.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli8.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli9.png"> </swiper-slide>
-            <swiper-slide class="ver"> <img src="max/peli1.png"> </swiper-slide>
-        </swiper-container>
+            <h3 class="text-white popular">Populares</h3>
+            <section class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide ml-[1%]"><img src="./imgSublimacion/peli1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli2.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli3.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli4.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli5.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli2.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli3.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli4.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli5.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli2.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli3.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli4.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli5.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli2.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli3.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli4.png" alt=""></li>
+                        <li class="splide__slide"><img src="./imgSublimacion/peli5.png" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-        <h1 class="text-white text-2xl pt-4 pb-1 las">Teratas di Indonesia Hari ini</h1>
+        <h3 class="accion">Acción</h3>
+        <div class="slick-list1" id="slick-list1">
+            <button class="slick-arrow1 slick-prev1" id="button-prev1" data-button="button-prev1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
 
-        <swiper-container class="mySwiper  mb-20" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="0" free-mode="true">
-            <swiper-slide class="relative vamos">
-                <div class="absolute numero text-white text-9xl bottom-0 left-0">1</div>
-                <img src="max/japones5.png">
-            </swiper-slide>
-            <swiper-slide class="relative vamos">
-                <div class="absolute numero text-white text-9xl bottom-0 left-0">2</div>
-                <img src="max/japones9.png">
-            </swiper-slide>
-            <swiper-slide class="relative vamos">
-                <div class="absolute numero text-white text-9xl bottom-0 left-0">3</div>
-                <img src="max/serie1.png">
-            </swiper-slide>
-            <swiper-slide class="relative vamos">
-                <div class="absolute numero text-white text-9xl bottom-0 left-0">4</div>
-                 <img src="max/peli1.png">
-            </swiper-slide>
-         </swiper-container>
+            <div class="slick-track1" id="track1">
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (12).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (13).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (14).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (24).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (25).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (14).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (12).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (13).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (14).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (24).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (25).png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/MoviePoster (14).png" alt="Image">
+                </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+            </div>
+            <button class="slick-arrow1 slick-next1" id="button-next1" data-button="button-next1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+        <h3 class="accion">Drama y Ficción</h3>
+        <div class="slick-list1" id="slick-list1">
+            <button class="slick-arrow1 slick-prev1" id="button-prev1" data-button="button-prev1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <div class="slick-track1" id="track1">
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli1.png">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli2.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli3.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli4.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli5.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli6.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli7.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli8.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli9.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli9.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/japones5.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/japones9.png" alt="Image">
+                </div>
+
+            </div>
+            <button class="slick-arrow1 slick-next1" id="button-next1" data-button="button-next1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+        <h3 class="accion">Terror</h3>
+        <div class="slick-list1" id="slick-list1">
+            <button class="slick-arrow1 slick-prev1" id="button-prev1" data-button="button-prev1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <div class="slick-track1" id="track1">
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli4.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/japones9.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/japones3.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/japones5.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli1.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli2.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli3.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli5.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli6.png " alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli7.png " alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli8.png" alt="Image">
+                </div>
+                <div class="slick1">
+                    <img src="./imgSublimacion/peli9.png" alt="Image">
+                </div>
+
+            </div>
+            <button class="slick-arrow1 slick-next1" id="button-next1" data-button="button-next1"
+                onclick="app1.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+        <div class="informacion">
+            <div class="cajaIn">
+                <ul>
+                    <li class="text-white logos">
+                        <img src="./imgSublimacion/Group (1).svg" alt="">
+                        <img src="./imgSublimacion/facebook.svg" alt="">
+                        <img src="./imgSublimacion/Group (2).svg" alt="">
+                        <img src="./imgSublimacion/Group (3).svg" alt="">
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]"> matese a pelicula .</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">encuentre las meores.</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">va encontar hasta porno.</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">como los mejores.</h3>
+                    </li>
+                    <li class="text-white"><button class="calificado">calificado</button></li>
+                </ul>
+            </div>
+            <div class="cajaIn">
+                <ul>
+                    <li class="text-white">matese a pelicula .</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">va encontar hasta porno.</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">somo los mejores.</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="cajaIn cajaPequeña">
+                <ul>
+                    <li class="text-white">
+                        <h3 class="p-[5%]"> matese a pelicula .</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]"> cuidado con las menores</h3>
+                    </li>
+                    <li class="text-white">
+                        <h3 class="p-[5%]">va encontar hasta porno.</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-            <script src="script/suprémacia.js"></script>
+
     </div>
+
+    <script src="./script/main.js" defer></script>
+    <script>
+        new Splide('.splide', {
+            fixedWidth: 150,
+            fixedHeight: 250,
+            gap: 10,
+            rewind: true,
+            pagination: false,
+            isNavigation: true,
+            breakpoints: {
+                600: {
+                    fixedWidth: 60,
+                    fixedHeight: 44,
+                },
+            },
+        }).mount();
+
+
+    </script>
 </body>
 
 </html>
